@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material';
 
-import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,6 @@ import {MatDialog} from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'training-bank';
 
   constructor(public dialog: MatDialog) {}
 
