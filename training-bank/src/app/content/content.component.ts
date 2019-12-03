@@ -22,7 +22,6 @@ export class ContentComponent implements OnInit {
       startDelay: 1000,
       loop: true
     };
+    const typed = new Typed('.typing-element', options);
   }
-  typed = new Typed('.typing-element', options);
-}
- 
+} 
