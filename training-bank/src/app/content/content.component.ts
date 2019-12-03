@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import * as Typed from 'typed.js/lib/typed.js'
+
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
+
 export class ContentComponent implements OnInit {
 
   constructor() { }
@@ -12,7 +14,7 @@ export class ContentComponent implements OnInit {
   ngOnInit() {
     const options = {
       stringsElement: '#typed-strings',
-      strings: ['Training banking juros amigo', 'Peça a portabilidade e venha ser Training Bankinhg hoje mesmo', 'Inovavor digital e seguro'],
+      strings: ['Training Banking juros amigo', 'Peça a portabilidade e venha ser Training Banking hoje mesmo', 'Inovador, digital e seguro'],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 200,
