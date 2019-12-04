@@ -7,7 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
-// import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    CadastroClientesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    // AppRoutingModule
+    AppRoutingModule,
+    CadastroClientesComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
