@@ -23,8 +23,7 @@ import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes
     BrowserModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    AppRoutingModule,
-    CadastroClientesComponent
+    AppRoutingModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes} from '@angular/router';
 import { ContentComponent } from './../content/content.component';
@@ -6,8 +6,8 @@ import { CadastroClientesComponent } from './../cadastro-clientes/cadastro-clien
 
 
 const routes: Routes = [
-  {path: 'cadastro-clientes', component: CadastroClientesComponent},
-  {path: '', component: ContentComponent}
+  {path: '', component: ContentComponent},
+  {path: 'cadastro-clientes', component: CadastroClientesComponent}
 ];
 
 @NgModule({
