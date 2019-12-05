@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeLogadaComponent } from './home-logada/home-logada.component';
+import { AuthGuard } from 'auth.guard';
+import { AuthService} from 'auth.service';
 
 @NgModule({
   declarations: [
