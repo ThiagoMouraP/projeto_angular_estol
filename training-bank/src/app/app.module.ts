@@ -15,6 +15,8 @@ import { AuthGuard } from 'auth.guard';
 import { AuthService} from 'auth.service';
 import { LoginComponent } from './login/login.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
+import { ModalNotCadastroComponent } from './modal-not-cadastro/modal-not-cadastro.component';
+import { AcessoNegadoComponent } from './acesso-negado/acesso-negado.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-conclu
     CadastroClientesComponent,
     HomeLogadaComponent,
     LoginComponent,
-    CadastroConcluidoComponent
+    CadastroConcluidoComponent,
+    ModalNotCadastroComponent,
+    AcessoNegadoComponent
   ],
   imports: [
     BrowserModule,

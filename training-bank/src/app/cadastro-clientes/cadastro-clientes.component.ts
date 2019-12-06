@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 import { debounceTime } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-clientes',
@@ -12,7 +13,10 @@ export class CadastroClientesComponent implements OnInit {
   formCadastro;
   conversao;
   valoresForm;
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private router: Router
+    ) { }
 
   ngOnInit() {
     this.formCadastro = this.fb.group({
@@ -33,6 +37,18 @@ export class CadastroClientesComponent implements OnInit {
     console.log(this.formCadastro.controls);
     this.conversao = JSON.stringify(this.valoresForm);
     localStorage.setItem('cadastro', this.conversao);
+
+    this.verificaCadastro();
    }
 
+   verificaCadastro() {
+    setTimeout(() => {
+      if (localStorage.getItem('cadastro')) {
+        // TODO REDIRECIIONAR PARA PAGINA DE CADASTRO CONCLUIDO
+        this.router.navigate(['cadastro-concluido']);
+      } else {
+        return false;
+      }
+    }, 200);
+  }
 }

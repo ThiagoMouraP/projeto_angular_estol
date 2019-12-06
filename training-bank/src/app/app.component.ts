@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +10,8 @@ import { MatDialog } from '@angular/material';
 })
 export class AppComponent {
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(AppComponent, {

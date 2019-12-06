@@ -7,6 +7,7 @@ import { HomeLogadaComponent } from '../home-logada/home-logada.component';
 import { AuthGuard } from 'auth.guard';
 import { LoginComponent } from '../login/login.component';
 import { CadastroConcluidoComponent } from '../cadastro-concluido/cadastro-concluido.component';
+import { AcessoNegadoComponent } from '../acesso-negado/acesso-negado.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'cadastro-clientes', component: CadastroClientesComponent },
   { path: 'cadastro-concluido', component: CadastroConcluidoComponent },
   { path: 'home-logada', component: HomeLogadaComponent, canActivate: [AuthGuard] },
-  // { path: 'acesso-negado', component: AcessoNegadoComponent},
+  { path: 'acesso-negado', component: AcessoNegadoComponent},
   { path: 'login', component: LoginComponent},
 ];
 

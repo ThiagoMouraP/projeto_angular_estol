@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ModalNotCadastroComponent } from '../modal-not-cadastro/modal-not-cadastro.component';
  
 @Component({
   selector: 'app-login',
@@ -42,14 +43,14 @@ export class LoginComponent implements OnInit {
     }
     }
 
-    // openDialog() {
-    //   const dialogRef = this.dialog.open(ModalNotCadastroComponent, {
-    //   height: '350px'
-    //   });
-    //   dialogRef.afterClosed().subscribe(result => {
-    //   console.log('Dialog result: ${result}');
-    //   });
-    //   }
+    openDialog() {
+      const dialogRef = this.dialog.open(ModalNotCadastroComponent, {
+      height: '350px'
+      });
+      dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog result: ${result}');
+      });
+      }
 
     login() {
     this.getCadastro = JSON.parse(localStorage.getItem('cadastro'));
@@ -57,8 +58,6 @@ export class LoginComponent implements OnInit {
     const cpfDigitado = this.formLogin.get('cpf').value;
     if (cpfPersistido === cpfDigitado) {
       this.router.navigate(['home-logada']);
-    } else {
-      // this.openDialog();
     }
-    }
+  } 
 }
