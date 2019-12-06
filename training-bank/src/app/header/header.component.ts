@@ -13,9 +13,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    alert("Projeto finalizado");
     this.form = new FormGroup({});
     this.formLogin = this.fb.group({
-      cpf: ['']
+      cpf: [''],
     })
   }
 
